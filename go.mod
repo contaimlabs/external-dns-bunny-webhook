@@ -8,7 +8,7 @@ require (
 	github.com/samber/lo v1.47.0
 	github.com/samber/oops v1.14.1
 	github.com/sethvargo/go-envconfig v1.1.0
-	github.com/thejerf/suture/v4 v4.0.5
+	github.com/thejerf/suture/v4 v4.0.6
 	sigs.k8s.io/external-dns v0.15.0
 )
 
