@@ -5,7 +5,7 @@ toolchain go1.23.4
 
 require (
 	github.com/hashicorp/go-cleanhttp v0.5.2
-	github.com/puzpuzpuz/xsync/v3 v3.4.0
+	github.com/puzpuzpuz/xsync/v3 v3.4.1
 	github.com/samber/lo v1.47.0
 	github.com/samber/oops v1.15.0
 	github.com/sethvargo/go-envconfig v1.1.0
