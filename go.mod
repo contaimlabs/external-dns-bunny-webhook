@@ -8,7 +8,7 @@ require (
 	github.com/hashicorp/go-cleanhttp v0.5.2
 	github.com/puzpuzpuz/xsync/v3 v3.5.0
 	github.com/samber/lo v1.49.1
-	github.com/samber/oops v1.15.0
+	github.com/samber/oops v1.16.1
 	github.com/sethvargo/go-envconfig v1.1.0
 	github.com/thejerf/suture/v4 v4.0.6
 	sigs.k8s.io/external-dns v0.15.1
