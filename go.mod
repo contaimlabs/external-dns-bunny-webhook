@@ -7,7 +7,7 @@ toolchain go1.23.4
 require (
 	github.com/hashicorp/go-cleanhttp v0.5.2
 	github.com/puzpuzpuz/xsync/v3 v3.5.0
-	github.com/samber/lo v1.49.1
+	github.com/samber/lo v1.50.0
 	github.com/samber/oops v1.15.0
 	github.com/sethvargo/go-envconfig v1.1.0
 	github.com/thejerf/suture/v4 v4.0.6
@@ -40,7 +40,7 @@ require (
 	go.opentelemetry.io/otel/trace v1.29.0 // indirect
 	golang.org/x/net v0.33.0 // indirect
 	golang.org/x/sys v0.28.0 // indirect
-	golang.org/x/text v0.21.0 // indirect
+	golang.org/x/text v0.22.0 // indirect
 	google.golang.org/protobuf v1.35.2 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	k8s.io/apimachinery v0.32.0 // indirect
