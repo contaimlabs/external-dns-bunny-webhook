@@ -24,11 +24,29 @@ changelog:
   sort: asc
 
 dockers:
-  - dockerfile: Dockerfile
-    image_templates:
-      - "ghcr.io/contaimlabs/external-dns-bunny-webhook:latest"
-      - "ghcr.io/contaimlabs/external-dns-bunny-webhook:{{ .Tag }}"
+  - image_templates:
+      - "ghcr.io/contaimlabs/external-dns-bunny-webhook:{{ .Tag }}-amd64"
+    use: buildx
+    build_flag_templates:
+      - "--pull"
+      - "--platform=linux/amd64"
+  - image_templates:
+      - "ghcr.io/contaimlabs/external-dns-bunny-webhook:{{ .Tag }}-arm64"
+    use: buildx
+    build_flag_templates:
+      - "--pull"
+      - "--platform=linux/arm64"
+    goarch: arm64
 
+docker_manifests:
+  - name_template: "ghcr.io/contaimlabs/external-dns-bunny-webhook:latest"
+    image_templates:
+      - "ghcr.io/contaimlabs/external-dns-bunny-webhook:{{ .Tag }}-amd64"
+      - "ghcr.io/contaimlabs/external-dns-bunny-webhook:{{ .Tag }}-arm64"
+  - name_template: "ghcr.io/contaimlabs/external-dns-bunny-webhook:{{ .Tag }}"
+    image_templates:
+      - "ghcr.io/contaimlabs/external-dns-bunny-webhook:{{ .Tag }}-amd64"
+      - "ghcr.io/contaimlabs/external-dns-bunny-webhook:{{ .Tag }}-arm64"
 release:
   github:
     owner: contaimlabs
